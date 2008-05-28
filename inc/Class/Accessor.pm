@@ -2,7 +2,7 @@
 package Class::Accessor;
 require 5.00502;
 use strict;
-$Class::Accessor::VERSION = '0.30';
+$Class::Accessor::VERSION = '0.31';
 
 #line 113
 
@@ -217,6 +217,6 @@ sub _croak {
     return;
 }
 
-#line 675
+#line 673
 
 1;
