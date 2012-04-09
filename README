@@ -1,27 +1,36 @@
-This is Perl module Sledge::Plugin::JSON::XS.
+NAME
+    Sledge::Plugin::JSON::XS - JSON::XS wrapper for Sledge
 
-INSTALLATION
+SYNOPSIS
+      package Your::Pages;
+      use Sledge::Plugin::JSON::XS;
 
-Sledge::Plugin::JSON::XS installation is straightforward. If your CPAN shell is set up,
-you should just be able to do
+      sub dispatch_foo {
+        my $self = shift;
+        $self->output_json_xs({foo => 'bar'});
+      }
 
-    % cpan Sledge::Plugin::JSON::XS
+DESCRIPTION
+    Sledge::Plugin::JSON::XS is JSON::XS wrapper for Sledge.
 
-Download it, unpack it, then build it as per the usual:
+    Sledge::Plugin::JSON is wrapper for JSON::Syck. but this module uses
+    JSON::XS.
 
-    % perl Makefile.PL
-    % make && make test
+CODE COVERAGE
+        ---------------------------- ------ ------ ------ ------ ------ ------ ------
+        File                           stmt   bran   cond    sub    pod   time  total
+        ---------------------------- ------ ------ ------ ------ ------ ------ ------
+        .../Sledge/Plugin/JSON/XS.pm  100.0  100.0  100.0  100.0    n/a  100.0  100.0
+        Total                         100.0  100.0  100.0  100.0    n/a  100.0  100.0
+        ---------------------------- ------ ------ ------ ------ ------ ------ ------
 
-Then install it:
+AUTHOR
+    Tokuhiro Matsuno <tokuhirom@gmail.com>
 
-    % make install
+SEE ALSO
+    Sledge::Plugin::JSON
 
-DOCUMENTATION
+LICENSE
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 
-Sledge::Plugin::JSON::XS documentation is available as in POD. So you can do:
-
-    % perldoc Sledge::Plugin::JSON::XS
-
-to read the documentation online with your favorite pager.
-
-Tokuhiro Matsuno
