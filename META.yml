@@ -20,11 +20,11 @@ no_index:
 provides:
   Sledge::Plugin::JSON::XS:
     file: lib/Sledge/Plugin/JSON/XS.pm
-    version: 0.03
+    version: 0.04
 requires:
   Filter::Util::Call: 0
   JSON::XS: 2.01
   perl: 5.00800
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.03
+version: 0.04
