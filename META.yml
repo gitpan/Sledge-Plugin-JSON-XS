@@ -3,6 +3,7 @@ abstract: 'JSON::XS wrapper for Sledge'
 author:
   - 'Tokuhiro Matsuno E<lt>tokuhirom@gmail.comE<gt>'
 build_requires:
+  Class::Accessor: 0
   Test::More: 0.98
 configure_requires:
   Module::Build: 0.38
@@ -20,11 +21,11 @@ no_index:
 provides:
   Sledge::Plugin::JSON::XS:
     file: lib/Sledge/Plugin/JSON/XS.pm
-    version: 0.04
+    version: 0.05
 requires:
   Filter::Util::Call: 0
   JSON::XS: 2.01
   perl: 5.00800
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.04
+version: 0.05
